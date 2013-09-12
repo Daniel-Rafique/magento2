@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!--
+/**
+* magento2
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Open Software License (OSL 3.0)
+* http://opensource.org/licenses/OSL-3.0
+*
+* @package      magento2
+* @copyright    Copyright (c) 2013 Gordon Lesti (http://www.gordonlesti.com)
+* @author       Gordon Lesti <info@gordonlesti.com>
+* @license      http://opensource.org/licenses/OSL-3.0 Open Software License (OSL 3.0)
+*/
+-->
+<config>
+    <modules>
+        <Lesti_HelloWorld>
+            <version>2.0.0.0</version>
+            <active>true</active>
+            <depends>
+                <Mage_Core/>
+            </depends>
+        </Lesti_HelloWorld>
+    </modules>
+    <frontend>
+        <routers>
+            <helloworld>
+                <use>standard</use>
+                <args>
+                    <module>Lesti_HelloWorld</module>
+                    <frontName>helloworld</frontName>
+                </args>
+            </helloworld>
+        </routers>
+        <translate>
+            <modules>
+                <Lesti_HelloWorld>
+                    <files>
+                        <default>Lesti_HelloWorld.csv</default>
+                    </files>
+                </Lesti_HelloWorld>
+            </modules>
+        </translate>
+    </frontend>
+</config>

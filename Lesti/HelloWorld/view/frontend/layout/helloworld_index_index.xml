@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+* magento2
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Open Software License (OSL 3.0)
+* http://opensource.org/licenses/OSL-3.0
+*
+* @package      magento2
+* @copyright    Copyright (c) 2013 Gordon Lesti (http://www.gordonlesti.com)
+* @author       Gordon Lesti <info@gordonlesti.com>
+* @license      http://opensource.org/licenses/OSL-3.0 Open Software License (OSL 3.0)
+*/
+-->
+<layout version="0.1.0">
+    <helloworld_index_index translate="label" type="page">
+        <label>Hello World Home Page</label>
+        <reference name="content">
+            <block type="Lesti_HelloWorld_Block_Hello" name="helloworld" template="Lesti_HelloWorld::helloworld.phtml">
+            </block>
+        </reference>
+    </helloworld_index_index>
+</layout>
